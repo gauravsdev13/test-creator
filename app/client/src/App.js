@@ -28,7 +28,7 @@ import FingerprintIcon from '@mui/icons-material/Fingerprint';
 
 import { Button, Tooltip } from '@mui/material';
 import { ethers } from "ethers";
-import { contractABI, contractAddress } from "/home/gaurav/Desktop/trellis-app/app/client/src/utils/constants.js";
+import { contractABI, contractAddress } from "C:/Users/gshar/Desktop/Test-creator/test-creator/app/client/src/utils/constants.js";
 
 
 function App() {

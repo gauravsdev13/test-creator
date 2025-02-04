@@ -13,10 +13,10 @@ app.use(cors({
 
 
 const db = mysql.createConnection({
-  host: 'db4free.net',
-  user:'sql5453401',
-  password:'@Caps123lock',
-  database:'sql5453401'
+  host: '',
+  user:'',
+  password:'',
+  database:''
 });
   
 app.post("/register", (req, res) => {

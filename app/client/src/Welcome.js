@@ -24,7 +24,7 @@ import Fab from '@mui/material/Fab';
 import KeyIcon from '@mui/icons-material/Key';
 import { Tooltip } from '@mui/material';
 import { ethers } from "ethers";
-import { contractABI, contractAddress } from "/home/gaurav/Desktop/trellis-app/app/client/src/utils/constants.js";
+import { contractABI, contractAddress } from "C:/Users/gshar/Desktop/Test-creator/test-creator/app/client/src/utils/constants.js";
 
 
 const style = {
@@ -574,7 +574,27 @@ const Welcome = (props) => {
 
   Axios.defaults.withCredentials = true;
 
-  const [activeTests, setActiveTestsList] = useState([]);
+  const [activeTests, setActiveTestsList] = useState([{
+    testName: "Math Exam",
+    duration: 90,  // in minutes
+    cost: 20,  // in USD
+    testId: "12345",
+    testDate: "2025-01-25T09:00:00Z",
+    endTime: "2025-01-25T10:30:00Z",
+    token: "sampleToken123",
+    foreignKey: "testData2025",
+  },
+  {
+    testName: "Physics Exam",
+    duration: 90,  // in minutes
+    cost: 15,  // in USD
+    testId: "12345",
+    testDate: "2025-01-25T09:00:00Z",
+    endTime: "2025-01-25T10:30:00Z",
+    token: "sampleToken123",
+    foreignKey: "testData2025",
+  },
+]);
   const [search, setSearch] = useState("");
 
   const [testEnded, setTestEnded] = useState(false);
